@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="kariyer" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="kariyerContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserSet" EntityType="kariyer.User" />
+    <EntitySet Name="UserTypeSet" EntityType="kariyer.UserType" />
+    <EntitySet Name="CategorySet" EntityType="kariyer.Category" />
+    <EntitySet Name="CommentSet" EntityType="kariyer.Comment" />
+    <EntitySet Name="PictureSet" EntityType="kariyer.Picture" />
+    <EntitySet Name="PaymentSet" EntityType="kariyer.Payment" />
+    <EntitySet Name="ResumeSet" EntityType="kariyer.Resume" />
+    <AssociationSet Name="UserTypeUser" Association="kariyer.UserTypeUser">
+      <End Role="UserType" EntitySet="UserTypeSet" />
+      <End Role="User" EntitySet="UserSet" />
+    </AssociationSet>
+    <AssociationSet Name="UserResume" Association="kariyer.UserResume">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Resume" EntitySet="ResumeSet" />
+    </AssociationSet>
+    <AssociationSet Name="CategoryResume" Association="kariyer.CategoryResume">
+      <End Role="Category" EntitySet="CategorySet" />
+      <End Role="Resume" EntitySet="ResumeSet" />
+    </AssociationSet>
+    <AssociationSet Name="CommentResume" Association="kariyer.CommentResume">
+      <End Role="Comment" EntitySet="CommentSet" />
+      <End Role="Resume" EntitySet="ResumeSet" />
+    </AssociationSet>
+    <AssociationSet Name="PictureResume" Association="kariyer.PictureResume">
+      <End Role="Picture" EntitySet="PictureSet" />
+      <End Role="Resume" EntitySet="ResumeSet" />
+    </AssociationSet>
+    <AssociationSet Name="UserPayment" Association="kariyer.UserPayment">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Payment" EntitySet="PaymentSet" />
+    </AssociationSet>
+    <AssociationSet Name="UserComment" Association="kariyer.UserComment">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Comment" EntitySet="CommentSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" />
+    <Property Name="Telephone" Type="String" Nullable="false" />
+    <Property Name="Mail" Type="String" Nullable="false" />
+    <Property Name="Avatar" Type="Binary" Nullable="true" />
+    <NavigationProperty Name="UserType" Relationship="kariyer.UserTypeUser" FromRole="User" ToRole="UserType" />
+    <Property Name="UserTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Resume" Relationship="kariyer.UserResume" FromRole="User" ToRole="Resume" />
+    <NavigationProperty Name="Payment" Relationship="kariyer.UserPayment" FromRole="User" ToRole="Payment" />
+    <NavigationProperty Name="Comment" Relationship="kariyer.UserComment" FromRole="User" ToRole="Comment" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="kariyer.UserTypeUser" FromRole="UserType" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" Nullable="false" />
+    <NavigationProperty Name="Resume" Relationship="kariyer.CategoryResume" FromRole="Category" ToRole="Resume" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Başlık" Type="String" Nullable="false" />
+    <Property Name="Text" Type="String" Nullable="false" />
+    <Property Name="Date" Type="String" Nullable="false" />
+    <Property Name="Verified" Type="String" Nullable="false" />
+    <NavigationProperty Name="Resume" Relationship="kariyer.CommentResume" FromRole="Comment" ToRole="Resume" />
+    <NavigationProperty Name="User" Relationship="kariyer.UserComment" FromRole="Comment" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Picture">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Resim" Type="Binary" Nullable="false" />
+    <NavigationProperty Name="Resume" Relationship="kariyer.PictureResume" FromRole="Picture" ToRole="Resume" />
+  </EntityType>
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="String" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="kariyer.UserPayment" FromRole="Payment" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Resume">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Başlık" Type="String" Nullable="false" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Text" Type="String" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="kariyer.UserResume" FromRole="Resume" ToRole="User" />
+    <NavigationProperty Name="Category" Relationship="kariyer.CategoryResume" FromRole="Resume" ToRole="Category" />
+    <NavigationProperty Name="Comment" Relationship="kariyer.CommentResume" FromRole="Resume" ToRole="Comment" />
+    <Property Name="CommentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Picture" Relationship="kariyer.PictureResume" FromRole="Resume" ToRole="Picture" />
+    <Property Name="PictureId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="UserTypeUser">
+    <End Type="kariyer.UserType" Role="UserType" Multiplicity="1" />
+    <End Type="kariyer.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserResume">
+    <End Type="kariyer.User" Role="User" Multiplicity="1" />
+    <End Type="kariyer.Resume" Role="Resume" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resume">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CategoryResume">
+    <End Type="kariyer.Category" Role="Category" Multiplicity="1" />
+    <End Type="kariyer.Resume" Role="Resume" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resume">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CommentResume">
+    <End Type="kariyer.Comment" Role="Comment" Multiplicity="1" />
+    <End Type="kariyer.Resume" Role="Resume" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resume">
+        <PropertyRef Name="CommentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PictureResume">
+    <End Type="kariyer.Picture" Role="Picture" Multiplicity="1" />
+    <End Type="kariyer.Resume" Role="Resume" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Picture">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resume">
+        <PropertyRef Name="PictureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserPayment">
+    <End Type="kariyer.User" Role="User" Multiplicity="1" />
+    <End Type="kariyer.Payment" Role="Payment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Payment">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserComment">
+    <End Type="kariyer.User" Role="User" Multiplicity="1" />
+    <End Type="kariyer.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

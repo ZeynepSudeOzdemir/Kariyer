@@ -1,0 +1,20 @@
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\Data.dll.config
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\Data.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\Data.pdb
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\EntityFramework.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\EntityFramework.SqlServer.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\EntityFramework.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\bin\EntityFramework.SqlServer.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\obj\Debug\Data.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Data\obj\Debug\Data.pdb
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\Data.dll.config
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\Data.dll
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\Data.pdb
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\KariyerCV\Data\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\KariyerCV\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\KariyerCV\Data\obj\Debug\Data.dll
+C:\Users\ASUS\Desktop\KariyerCV\Data\obj\Debug\Data.pdb

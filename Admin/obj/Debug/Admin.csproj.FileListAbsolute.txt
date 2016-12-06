@@ -1,0 +1,48 @@
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\Admin.dll.config
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\Admin.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\Admin.pdb
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\Data.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Helpers.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Mvc.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Razor.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.Razor.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\EntityFramework.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\Data.pdb
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Razor.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Webpages.Razor.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Helpers.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\System.Web.Mvc.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\EntityFramework.xml
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\obj\Debug\Admin.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\obj\Debug\Admin.pdb
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\Murat\Desktop\Gazete ve Haber\KariyerCV\Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\Admin.dll.config
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\Admin.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\Admin.pdb
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\Data.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.Razor.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\Data.pdb
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Webpages.Razor.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\KariyerCV\Admin\obj\Debug\Admin.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\KariyerCV\Admin\obj\Debug\Admin.dll
+C:\Users\ASUS\Desktop\KariyerCV\Admin\obj\Debug\Admin.pdb
